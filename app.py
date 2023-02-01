@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    conn = sqlite3.connect("samplestores1.db")
+    conn = sqlite3.connect("samplestores3.db")
     c = conn.cursor()
     c.execute("SELECT * FROM samples")
     samples = c.fetchall()

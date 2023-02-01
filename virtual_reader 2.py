@@ -75,9 +75,9 @@ b'es_id></he',
 b'ader><samp',
 b'le><number',
 b'>1</number',
-b'><id1>TEST2',
+b'><id1>TEST3',
 b'</id1><siz',
-b'e>1.2345 g',
+b'e>3.2345 g',
 b'</size><de',
 b'nsity>1.0 ',
 b'g/mL</dens',
@@ -98,7 +98,7 @@ b'r>R2</numb',
 b'er><name>T',
 b'AN</name><',
 b'result_val',
-b'ue>0.90 mg',
+b'ue>1.90 mg',
 b' KOH/g</re',
 b'sult_value',
 b'></result>',
@@ -129,7 +129,7 @@ info = parse.read_data(raw)
 print(info)
 
 for sample in info:
-    db.add_sample('samplestores2.db', sample)
+    db.add_sample('samplestores3.db', sample)
 
 
 

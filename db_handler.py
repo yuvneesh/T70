@@ -17,15 +17,19 @@ def add_sample(database: str, sample: dict):
                 sample_id TEXT,
                 size TEXT,
                 result TEXT,
+                unit TEXT,
+                start_date TEXT,
                 start_time TEXT
                 )""")
     conn.commit()
 
-    c.execute("""INSERT INTO samples (sample_id, size, result, start_time)
-                VALUES (?,?,?,?)""", 
+    c.execute("""INSERT INTO samples (sample_id, size, result, unit, start_date, start_time)
+                VALUES (?,?,?,?,?,?)""", 
                 (sample['id'], 
                  sample['size'],
                  sample['result'],
+                 sample['unit'],
+                 sample['start_date'],
                  sample['start_time']))
     conn.commit()
 

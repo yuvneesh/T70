@@ -11,6 +11,8 @@
         <th>Sample ID</th>
         <th>Size</th>
         <th>Result</th>
+        <th>Unit</th>
+        <th>Start Date</th>
         <th>Start Time</th>
       </tr>
       {% for sample in samples %}
@@ -20,6 +22,8 @@
         <td>{{ sample[2] }}</td>
         <td>{{ sample[3] }}</td>
         <td>{{ sample[4] }}</td>
+        <td>{{ sample[5] }}</td>
+        <td>{{ sample[6] }}</td>
       </tr>
       {% endfor %}
     </table>
